@@ -23,13 +23,13 @@ public class Todo {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Todo(String name, String status, String priority, Boolean isCompleted) {
-		super();
-		this.name = name;
-		this.status = status;
-		this.priority = priority;
-		this.isCompleted = isCompleted;
-	}
+// 	public Todo(String name, String status, String priority, Boolean isCompleted) {
+// 		super();
+// 		this.name = name;
+// 		this.status = status;
+// 		this.priority = priority;
+// 		this.isCompleted = isCompleted;
+// 	}
 
 	public Long getId() {
 		return id;
@@ -39,33 +39,33 @@ public class Todo {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
-	}
+// 	public String getName() {
+// 		return name;
+// 	}
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getStatus() {
-		return status;
-	}
+// 	public String getStatus() {
+// 		return status;
+// 	}
 
 	public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getPriority() {
-		return priority;
-	}
+// 	public String getPriority() {
+// 		return priority;
+// 	}
 
 	public void setPriority(String priority) {
 		this.priority = priority;
 	}
 
-	public Boolean getIsCompleted() {
-		return isCompleted;
-	}
+// 	public Boolean getIsCompleted() {
+// 		return isCompleted;
+// 	}
 
 	public void setIsCompleted(Boolean isCompleted) {
 		this.isCompleted = isCompleted;
