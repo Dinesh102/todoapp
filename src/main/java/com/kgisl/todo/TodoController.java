@@ -21,28 +21,28 @@ public class TodoController {
 		return todorepository.findAll();
 	}
 
-	@RequestMapping(method = RequestMethod.POST)
-	public Todo create(@RequestBody Todo todo) {
-		return todorepository.save(todo);
-	}
+// 	@RequestMapping(method = RequestMethod.POST)
+// 	public Todo create(@RequestBody Todo todo) {
+// 		return todorepository.save(todo);
+// 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
 	public void delete(@PathVariable Long id) {
 		todorepository.delete(id);
 	}
 
-	@RequestMapping(value = "/ids", method = RequestMethod.POST)
-	public void clearall(@RequestBody Long[] ids) {
-		for (int i = 0; i < ids.length; i++) {
-			System.out.println(ids[i]);
-			todorepository.delete(ids[i]);
-		}
-	}
+// 	@RequestMapping(value = "/ids", method = RequestMethod.POST)
+// 	public void clearall(@RequestBody Long[] ids) {
+// 		for (int i = 0; i < ids.length; i++) {
+// 			System.out.println(ids[i]);
+// 			todorepository.delete(ids[i]);
+// 		}
+// 	}
 
-	@RequestMapping(value = "/{id}", method = RequestMethod.POST)
-	public Todo updateItem(@RequestBody Todo todo, @PathVariable Long id) {
-		todo.setId(id);
-		return todorepository.saveAndFlush(todo);
-	}
+// 	@RequestMapping(value = "/{id}", method = RequestMethod.POST)
+// 	public Todo updateItem(@RequestBody Todo todo, @PathVariable Long id) {
+// 		todo.setId(id);
+// 		return todorepository.saveAndFlush(todo);
+// 	}
 
 }
