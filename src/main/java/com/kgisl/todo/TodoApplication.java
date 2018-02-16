@@ -13,10 +13,10 @@ public class TodoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TodoApplication.class, args);
 	}
-	@Bean
-	public ServletRegistrationBean h2servletRegistration() {
-		ServletRegistrationBean registration = new ServletRegistrationBean(new WebServlet());
-		registration.addUrlMappings("/console/*");
-		return registration;
-	}
+// 	@Bean
+// 	public ServletRegistrationBean h2servletRegistration() {
+// 		ServletRegistrationBean registration = new ServletRegistrationBean(new WebServlet());
+// 		registration.addUrlMappings("/console/*");
+// 		return registration;
+// 	}
 }
